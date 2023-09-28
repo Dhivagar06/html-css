@@ -1,0 +1,117 @@
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('wood.jpg');
+
+    background-repeat: no-repeat;
+   
+
+}
+
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:90%;
+    padding:20px 100px;
+    background-color:rgba(255,255,255,.1);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-bottom:2px solid rgba(255,255,255,.2);
+
+
+}
+.header::before{
+content:'';
+position:absolute;
+left:-100%;
+height:100%;
+width:100%;
+background: linear-gradient(200deg , transparent,rgba(255,255,255,.4),transparent);
+transition:.7s;
+}
+.header:hover::before{
+    left:100%;
+}
+.logo{
+    color: #000000;
+    font-size: 23px;
+    cursor:pointer;
+    text-decoration:none;
+    transition:.3s;
+}
+span{
+    font-family:'Dancing script';
+    font-weight: 600;
+}
+.logo:hover{
+    color: #ff6660;
+    transform:scale(1.3)
+}
+.navbar a{
+    color:black;
+    font-size: 20px;
+    text-decoration:none;
+    margin-left:35px;
+    transition:.3s;
+
+}
+.navbar a:hover{
+    background-color: #ff6660;
+    border-radius:10%;
+    padding: 10px;
+    color: #fff;
+}
+.h{
+    padding-top: 130px;
+   
+}
+h1{
+    padding-left: 30px;
+   font-family:  Tahoma, sans-serif;
+}
+p{
+    font-family:  Tahoma, sans-serif;
+    padding-left: 80px;
+    font-weight: 100px;
+
+}
+.button {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+    border-radius: 70px;
+    height: 40px;
+    width: 110px;
+  }
+  
+  .button:hover {
+    background-color: #f44336;
+    color: white;
+  }
+ 
+  .pages {
+    width: 100px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    cursor: pointer;
+    background-color: #000000;
+    color: #ddd;
+}
+
+.pages :nth-child(1) {
+    color: orangered;
+}
+.arrow {
+    padding: 10px 15px;
+    background-color:lightgoldenrodyellow ;
+    border-radius: 50%;
+    position: relative;
+    top: -20px;
+    left: 90%;
+    margin-bottom: 200px;
+    font-size: 30px;
+    cursor: pointer;
+}
